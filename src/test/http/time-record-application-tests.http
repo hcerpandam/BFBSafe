@@ -1,0 +1,58 @@
+###
+
+DELETE {{host}}
+Authorization: Basic bm9tcWprdGtwdXdud3I6NjI3ZmI0Yjc3Y2ZkNmE1MWQ0Yzk3ZWIxYmQzNjQ2N2IzZWM5MDVmZWVkNzNjODc4MDJmYzkyYTAxOGRiNTcxNA==
+
+###
+
+POST {{host}}
+Authorization: Basic bm9tcWprdGtwdXdud3I6NjI3ZmI0Yjc3Y2ZkNmE1MWQ0Yzk3ZWIxYmQzNjQ2N2IzZWM5MDVmZWVkNzNjODc4MDJmYzkyYTAxOGRiNTcxNA==
+Content-Type: application/json
+
+[
+    {
+        "Id": "a042p00000zbHnuAAE",
+        "TimeRecordControlId__c": "a052p000017IwEXAA0",
+        "TimeRecordControlId__r.EmployeeId__c": "a002p00000xiggXAAQ",
+        "Name": "RC-00000004",
+        "LastModifiedDate": "2019-12-05T13:29:58.000+0000",
+        "LastModifiedById": "0052p000009kxiSAAQ",
+        "RecordDate__c": "2019-12-07",
+        "isTeleworking__c": false,
+        "StartWorkingTime__c": "08:00:00.000Z",
+        "EndWorkingTime__c": "17:00:00.000Z",
+        "BreakStart__c": "11:00:00.000Z",
+        "BreakEnd__c": "11:15:00.000Z",
+        "LaunchStart__c": "14:00:00.000Z",
+        "LaunchFinish__c": "15:00:00.000Z",
+        "LaunchRange__c": 1,
+        "CheckRequirement__c": "10:00:00.000Z",
+        "CheckInsertion__c": "10:01:00.000Z",
+        "StartWorkingHoursGeolocation__Latitude__s": 37.409514,
+        "StartWorkingHoursGeolocation__Longitude__s": -6.005064,
+        "StartWorkingHoursGeolocation__c": {
+            "latitude": 37.409514,
+            "longitude": -6.005064
+        },
+        "GeolocationOnCheckEndWorkingHours__Latitude__s": 37.500001,
+        "GeolocationOnCheckEndWorkingHours__Longitude__s": -6.100001,
+        "GeolocationOnCheckEndWorkingHours__c": {
+            "latitude": 37.500001,
+            "longitude": -6.100001
+        },
+        "Status__c": "Contencioso por inacción",
+        "ContentiousCause__c": "Se me olvidó1!!",
+        "CheckEndWorkingHours__c": "17:30:00.000Z",
+        "EndCheckEndWorkingHours__c": "17:45:00.000Z",
+        "EmployeeHasLeftWorkplace__c": false,
+        "RecordedByCompany__c": 8,
+        "IsCopy__c": false
+    }
+]
+
+###
+
+GET {{host}}/contencioso
+Authorization: Basic bm9tcWprdGtwdXdud3I6NjI3ZmI0Yjc3Y2ZkNmE1MWQ0Yzk3ZWIxYmQzNjQ2N2IzZWM5MDVmZWVkNzNjODc4MDJmYzkyYTAxOGRiNTcxNA==
+
+###
